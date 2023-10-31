@@ -1,0 +1,219 @@
+/* Reset some default styles */
+body, h1, p, ul{
+    margin: 0;
+    padding: 0;
+}
+
+/* Insta Icon */
+.fa{
+    font-size: 100px;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+.normal-txt{
+    font-weight: 400;
+}
+
+/* Header Styling */
+.header-container{
+    width: 100%;
+    background-color: rgba(101, 64, 126, 0.664);
+    max-height: 75px;
+}
+
+.header-container .logo{
+    max-width: auto;
+    max-height: 75px;
+    margin: 0;
+}
+
+.header-container ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px 0 50px;
+}
+
+.header-container li{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-family: monospace, arial;
+}
+
+.header-container a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.header-container a:hover{
+    text-decoration: underline;
+}
+
+/* Main Styling */
+.main{
+    padding-top: 20px;
+}
+
+/* Banner Styling */
+.banner{
+    display: flex;
+    flex-direction: column;
+    background-image: url("./images/banner.PNG");
+    height: 600px;
+    max-width: 1400px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    font-family: monospace, arial;
+}
+
+.banner .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.banner .content h4{
+    margin: 0 auto;
+    border: 1px solid black;
+    width: 150px;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: rgba(240, 248, 255, 0.938);
+}
+
+.banner .content .info {
+    background-color: rgba(240, 248, 255, 0.884);
+    padding: 10px;
+}
+
+/* Products Styling */
+.products{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 1400px;
+    padding: 10px;
+    padding-bottom: 50px;
+}
+
+.products-panel{
+    display: flex;
+    flex-direction: row;
+    justify-items: flex-start;
+    margin: 0;
+    overflow-x: scroll;
+}
+
+/* Table Styling */
+.table{
+    border: 1px solid rgba(101, 64, 126, 0.664);
+    width: 1300px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3,200px);
+}
+
+.box{
+    background-color: rgba(101, 64, 126, 0.418);
+    color: black;
+    row-gap: 10px;
+    column-gap: 10px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-family: monospace, arial;
+}
+
+.e{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: span 2;
+}
+
+.box:hover{
+    background-color: aqua;
+    cursor: pointer;
+}
+
+/* Location Styling */
+#location{
+    display: flex;
+    flex-direction: row;
+    width: 1400px;
+    margin: 0 auto;
+    justify-content: space-around;
+    padding-bottom: 50px;
+}
+
+.location-img{
+    background-image: url(./images/location.PNG);
+    width: 750px;
+    height: 550px;
+    border-radius: 10px;
+}
+
+.location-info{
+    border: 1px solid rgb(101, 64, 126);
+    border-radius: 10px;
+    display: flex;
+    background-color: rgba(240, 248, 255, 0.884);;
+    flex-direction: column;
+    padding: 50px 200px 50px 200px;
+    font-family: monospace;
+    font-size: 20px;
+    justify-content: space-around;
+}
+
+/* Footer */
+#footer{
+    background-color: rgba(101, 64, 126, 0.418);
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-wrap{
+    display: flex;
+    flex-direction: row;
+    text-align: start;
+    margin: 0;
+    padding: 25px 25px 25px 25px;
+    font-family: 'Space Mono', monospace;
+    justify-content: space-around;
+}
+
+.footer-help a{
+    color: black;
+    text-decoration: none;
+}
+
+.footer-help a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
+.copyright{
+    text-align: start;
+    padding-left: 25px;
+}
